@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+body{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container{
+    background-color: rgb(226, 226, 226);
+    width: 30%;
+    padding: 1rem 1rem;
+    min-width: 350px;
+    box-shadow: 0px 0px 28px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 28px 3px rgba(0,0,0,0.75);
+}
+
+
+.container #music-details{
+    display: grid;
+}
+
+#music-details .title{
+    display: flex;
+    margin: auto;
+}
+
+#music-details .singer{
+    display: flex;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.container #music-image{
+    display: flex;
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 95%;
+}
+
+#controls i{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+
+#progress{
+    margin-bottom: 20px;
+}
+
+#progress .times{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#progress-bar{
+    width: 100%;
+}
+
+.card-footer{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer .btn{
+    font-size: 20px;
+    border: none;
+    color: black;
+    background-color: rgb(226, 226, 226);
+}
+
+.container #controls .buttons{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container #controls #volume-container{
+    display: flex;
+    margin: 2rem auto;
+    justify-content: end;
+}
+
+.container #controls #volume-container i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#volume-container input{
+    width: 90px;
+}
+
+
+#music-list li {
+    border-bottom: 0.3px solid gray;
+    background-color: rgb(226, 226, 226);
+}
+
+#music-list li span{
+    font-size: 15px;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+#music-list li span:active{
+    background-color:  rgb(146, 143, 143);
+}
+
+#music-list li:hover{
+    background-color: rgba(183, 180, 180, 0.48);
+}
+
+
+li.playing{
+    color: #a55f5f;
+}
