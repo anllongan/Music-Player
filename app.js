@@ -18,6 +18,7 @@ window.addEventListener("load", () => {
     let music = player.getMusic();
     displayMusic(music);
     displayMusicList(player.musicList);
+    isPlayingNow();
 });
 
 function displayMusic(music) {
@@ -162,3 +163,7 @@ const isPlayingNow = () => {
         }
     }
 }
+
+audio.addEventListener("ended", () => {
+    nextMusic();
+})
